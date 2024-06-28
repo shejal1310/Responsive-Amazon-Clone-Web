@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Registration</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        img {
+            height: 45px;
+            width: 140px;
+            display: block;
+            margin: 20px auto;
+        }
+        .continue {
+            width: 100%;
+            height: 40px;
+            background-color: #ff9900;
+            border: 1px solid #ff9900;
+            border-radius: 3px;
+            color: #fff;
+            font-weight: bold;
+        }
+        .form {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 350px;
+            padding: 20px;
+            margin: 0 auto;
+            background-color: #f7f7f7;
+        }
+        label {
+            font-weight: bold;
+            font-size: 14px;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .main, .mob, .pin {
+            width: 100%;
+            height: 35px;
+            border: 1px solid #a6a6a6;
+            border-radius: 3px;
+            margin-bottom: 15px;
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+        .pin {
+            width: 100px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .mob {
+            width: calc(100% - 110px);
+            display: inline-block;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .link {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        a {
+            text-decoration: none;
+            color: #0073e6;
+        }
+        .error {
+            color: red;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+   
+</head>
+<body>
+    <a href=""><img src="https://zeevector.com/wp-content/uploads/LOGO/Amazon-India-Logo-PNG-HD.png" alt="amazon"></a>
+
+    <div class="form">
+        <form  action="RegisterUser">
+            <h1 style="font-weight: 450; font-size: xx-large; text-align: center; margin-bottom: 20px;">Create Account</h1>
+            <label for="name">Your name</label>
+            <input class="main" type="text" name="name" id="name" placeholder="First and last name" required>
+            
+            <label for="country-code">Mobile number</label>
+            <div>
+               
+                <input class="main" type="text" name="mobile" id="mobile" placeholder="Mobile number" required> 
+            </div>
+
+            <label for="email">Email</label>
+            <input class="main" type="email" name="email" id="email">
+            
+            <label for="password">Password</label>
+            <input class="main" type="password" name="password" id="password" required>
+            <div id="error-message" class="error"></div>
+
+            
+            <input class="continue" type="submit" value="Continue">
+            
+            <p style="font-size: 14px; text-align: center; margin-top: 20px;">Already have an account? <a href="login.html">Sign in</a></p>
+           
+            <footer>
+                <div class="link">
+                    <a href="#">Conditions of Use</a>
+                    <a href="#">Privacy Notice</a>
+                    <a href="#">Help</a>
+                </div>
+                <p>© 1996-2023, Amazon.com, Inc. or its affiliates</p>
+            </footer>
+        </form>
+    </div>
+</body>
+</html>
